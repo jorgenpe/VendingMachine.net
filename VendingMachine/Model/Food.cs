@@ -9,17 +9,30 @@ namespace VendingMachine.Model
      class Food : Product
     {
         private string foodType;
+        public string foodName;
+        public string foodDescription;
 
         public string Foodtype { get { return foodType; } set { foodType = value; } }
 
+        public string FoodName { get{ return foodName; } set { foodName = value; } }
+
+        public string FoodDescription { get { return foodDescription; } set { foodDescription = value; } }
+
         public override string Examine()
         {
-            throw new NotImplementedException();
+            return $" {Foodtype}: {FoodName}: {FoodDescription} ";
         }
 
         public override string Use()
         {
-            throw new NotImplementedException();
+            if(foodType == "Sandwich")
+            {
+                return $" Unrapp the sandwich and eat it";
+            } else
+            {
+                return $" Remove the lid and take the fork and knife and start to eat."
+            }
+            
         }
     }
 }
