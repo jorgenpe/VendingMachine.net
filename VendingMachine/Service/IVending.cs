@@ -9,9 +9,9 @@ namespace VendingMachine.Service
 {
     interface IVending
     {
-        Product Purchase();
+        Product Purchase(int id);
         List<string> ShowAll();
-        string Details();
+        string Details(int id);
         void InsertMoney();
         Dictionary<int,int> EndTransactin();
     }

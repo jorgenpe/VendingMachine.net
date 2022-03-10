@@ -12,6 +12,8 @@ namespace VendingMachine.Model
         public string foodName;
         public string foodDescription;
 
+
+
         public string Foodtype { get { return foodType; } set { foodType = value; } }
 
         public string FoodName { get{ return foodName; } set { foodName = value; } }

@@ -13,6 +13,12 @@ namespace VendingMachine.Model
         private string candyName;
         private string candyDescription;
         
+        public Candy(int id, int candyPrice, string candyType, string candyName,string candyDescription)
+        {
+            Product.Id = id;
+            Product.
+
+        }
 
         public string CandyType { get { return candyType; } set { candyType = value; } }
         
